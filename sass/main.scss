@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Montserrat Regular';
+    font-weight: 400;
+    font-style: normal;
+	src: url('../fonts/montserrat_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/montserrat_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/montserrat_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/montserrat_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/montserrat_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/montserrat_regular.svg#montserrat_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Ubuntu Regular';
+    font-weight: 400;
+    font-style: normal;
+	src: url('../fonts/ubuntu_regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ubuntu_regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ubuntu_regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ubuntu_regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ubuntu_regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ubuntu_regular.svg#ubuntu_regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Ubuntu Medium';
+    font-weight: 500;
+    font-style: normal;
+	src: url('../fonts/ubuntu_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ubuntu_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ubuntu_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ubuntu_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ubuntu_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ubuntu_medium.svg#ubuntu_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body {
+    font-family: 'Ubuntu Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-family: 'Ubuntu Medium';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    width: 986px;
+    margin: 0 auto;
+}
+.page-customize {
+    height: 768px;
+    padding: 32px 0 0 32px;
+}
+.page-customize__text {
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.page-customize__form {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.form__fieldset {
+    margin: 24px 0 0 0;
+    padding: 0;
+}
+.form__fieldset-input--code {
+    width: 49.33px;
+    height: 32px;
+    padding: 8px;
+}
+.form__fieldset-checkbox {
+    width: 205px;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0;
+}
+.label {
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.label__radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.form__fieldset-label--code {
+    margin-right: 26px;
+}
+.input {   
+    &:hover {
+        &::placeholder {
+            color: #0B0A0A;
+        }
+    }
+    padding: 8px;
+    border-radius: 6px;
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.form__fieldset-input-text {
+    height: 32px;
+    width: 196px;
+    border-radius: 6px;
+    padding: 8px;
+}
+.form__fieldset-input--checkbox {
+    height: 18px;
+    width: 18px;
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.form__fieldset-input--checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.select {
+    position: relative;
+    width: 196px;
+    height: 32px;
+    padding:  8px 8px 8px 8px;
+    border-radius: 6px;
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &[data-state="active"] {
+      .select__title {
+        &::before {
+          transform: translate(-3px, -50%) rotate(-45deg);
+        }
+        &::after {
+          transform: translate(3px, -50%) rotate(45deg);
+        }
+      }
+      .select__content {
+        opacity: 1;
+      }
+      .select__label + .select__input + .select__label {
+        max-height: 32px;
+        border-top-width: 1px;
+      }
+    }
+}
+.select__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      display: block;
+      width: 10px;
+      height: 2px;
+      transition: all 0.3s ease-out;
+      transform: translate(-3px, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(3px, -50%) rotate(-45deg);
+    }
+}
+.reset {
+    display: flex;
+    width: 196px;
+    padding: 8px 16px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease-out; 
+    font-weight: bold;
+}
+.select__content {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: none;
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    z-index: 8;
+}
+.select__input {
+    display: none;
+    &:checked + label {
+      background-color: #dedede;
+    }
+    &:disabled + label {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+}
+.select__label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    transition: all 0.2s ease-out; 
+    overflow: hidden;
+    &:hover {
+      background-color: #DFDADA !important;
+    }
+}
+.form__fieldset-input--code {
+    height: 32px;
+    width: 50px;
+}
+.form__fieldset--code {
+    justify-content: space-between;
+}
+.form__fieldset-buttons {
+    margin-top: 20px;
+    justify-content: start;
+    padding: 0;
+} 
+.button {
+    border-radius: 3px;
+    padding: 4px 8px 4px 8px;
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    outline: none;
+}
+.form__fieldset-buttons--apply {
+    padding: 4px 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;  
+    outline: none;
+    margin: 0 16px 0 0;
+}
+.form__fieldset-buttons--apply:hover {
+    transition: all 0.3s ease 0s;
+}
+.form__fieldset-buttons--apply:focus {
+   border-radius: 3px;
+   transition: all 0.3s ease 0s;
+}
+.form__fieldset-buttons--cancel {
+    border: none;
+}
+.page-customize__footer {
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(../img/bgi_dark.png);
+}
+.footer__text {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+}
+.footer__span-blue {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #205EB0;
+}
+

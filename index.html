@@ -1,0 +1,283 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["theme"]))
+{
+    $_SESSION["theme"] = "light";
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="stylesheet" href="sass/light.css" id="toggleThemeLink" />
+    <!-- <link rel="stylesheet" type="text/css" href="sass/<?php echo $_SESSION["theme"]; ?>.css" id="theme-link"> -->
+    <title>MDL</title>
+  </head>
+  <body>
+    <?php echo date('l, F jS, Y'); ?>
+    <div class="wrapper">
+      <div class="page-customize container">
+        <h3 class="title page-customize__title">Preferences</h3>
+        <p class="text page-customize__text">
+          On this page you can configure the main system parameters available
+          for customization
+        </p>
+        <form action="" class="form page-customize__form">
+          <fieldset class="fieldset form__fieldset">
+            <label for="company" class="label form__fieldset-label"
+              >Company Title</label
+            ><input
+              type="text"
+              class="input form__fieldset-input-text"
+              id="company"
+              placeholder="Default"
+            />
+          </fieldset>
+          <fieldset class="fieldset form__fieldset">
+            <label class="label form__fieldset-label">First Day</label>
+            <div class="select" data-state="">
+              <div class="select__title" data-default="Monday">Monday</div>
+              <div class="select__content">
+                <input
+                  id="day_of_week"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                  checked
+                />
+                <label for="day_of_week" class="select__label">Monday</label>
+                <input
+                  id="Monday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="tuesday" class="select__label">Monday</label>
+                <input
+                  id="tuesday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="tuesday" class="select__label">Tuesday</label>
+                <input
+                  id="wednesday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="wednesday" class="select__label">Wednesday</label>
+                <input
+                  id="thursday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="thursday" class="select__label">Thursday</label>
+                <input
+                  id="Friday"
+                  class="select__input"
+                  type="checkbox"
+                  name="singleSelect"
+                />
+                <label for="Friday" class="select__label">Friday</label>
+                <input
+                  id="saturday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="saturday" class="select__label">Saturday</label>
+                <input
+                  id="sunday"
+                  class="select__input"
+                  type="checkbox"
+                  name="days"
+                />
+                <label for="sunday" class="select__label">Sunday</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset form__fieldset">
+            <label for="container_width" class="label form__fieldset-label"
+              >Container Width</label
+            >
+            <div class="select" data-state="">
+              <div class="select__title" data-default="Fixed">Fixed</div>
+              <div class="select__content">
+                <input
+                  id="container__width"
+                  class="select__input"
+                  type="radio"
+                  name="type_of"
+                  checked
+                />
+                <label for="container__width" class="select__label"
+                  >Fixed</label
+                >
+                <input
+                  id="fixed"
+                  class="select__input"
+                  type="radio"
+                  name="type_of"
+                />
+                <label for="fixed" class="select__label">Fixed</label>
+                <input
+                  id="relative"
+                  class="select__input"
+                  type="radio"
+                  name="type_of"
+                />
+                <label for="relative" class="select__label">Relative</label>
+                <input
+                  id="sticky"
+                  class="select__input"
+                  type="radio"
+                  name="type_of"
+                />
+                <label for="sticky" class="select__label">Sticky</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset form__fieldset">
+            <label for="homepage" class="label form__fieldset-label"
+              >Homepage</label
+            >
+            <div class="select" data-state="">
+              <div class="select__title" data-default="Starred_Projects">
+                Starred Projects
+              </div>
+              <div class="select__content">
+                <input
+                  id="homepage"
+                  class="select__input"
+                  type="radio"
+                  name="status_project"
+                  checked
+                />
+                <label for="homepage" class="select__label"
+                  >Starred Projects</label
+                >
+                <input
+                  id="starred_Projects"
+                  class="select__input"
+                  type="radio"
+                  name="status_project"
+                />
+                <label for="starred_Projects" class="select__label"
+                  >Starred Projects</label
+                >
+                <input
+                  id="working_projects"
+                  class="select__input"
+                  type="radio"
+                  name="status_project"
+                />
+                <label for="working_projects" class="select__label"
+                  >Working projects</label
+                >
+                <input
+                  id="completed-projects"
+                  class="select__input"
+                  type="radio"
+                  name="status_project"
+                />
+                <label for="completed-projects" class="select__label"
+                  >Completed projects</label
+                >
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="fieldset form__fieldset">
+            <label for="" class="label form__fieldset-label">Indent Size</label
+            ><input
+              type="text"
+              class="input form__fieldset-input-text"
+              placeholder="Default"
+            />
+          </fieldset>
+          <fieldset class="fieldset form__fieldset form__fieldset--code">
+            <label
+              for=""
+              class="label form__fieldset-label form__fieldset-label--code"
+              >Personal Code</label
+            ><input
+              type="text"
+              class="input form__fieldset-input--code"
+              placeholder="1645"
+            />
+            -
+            <input
+              type="text"
+              class="input form__fieldset-input--code"
+              placeholder="1566"
+            />
+            -
+            <input
+              type="text"
+              class="input form__fieldset-input--code"
+              placeholder="1249"
+            />
+          </fieldset>
+          <fieldset class="fieldset form__fieldset">
+            <label for="" class="label form__fieldset-label">Theme</label>
+            <fieldset class="fieldset form__fieldset-checkbox">
+              <label for="radio_light" class="label label__radio">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="input form__fieldset-input--checkbox"
+                  id="radio_light"
+                  value="1"
+                  onclick="radioClick(this)"
+                  checked
+                />
+                Light
+              </label>
+              <label for="radio_dark" class="label label__radio">
+                <input
+                  type="radio"
+                  name="radio"
+                  class="input form__fieldset-input--checkbox"
+                  id="radio_dark"
+                  value="2"
+                  onclick="radioClick(this)"
+                />
+                Dark
+              </label>
+            </fieldset>
+          </fieldset>
+          <fieldset class="fieldset form__fieldset-buttons">
+            <button
+              type="button"
+              id="toggleTheme"
+              class="button form__fieldset-buttons--apply"
+            >
+              Apply and Save
+            </button>
+            <button type="button" class="button form__fieldset-buttons--cancel">
+              Cancel
+            </button>
+          </fieldset>
+        </form>
+      </div>
+      <footer class="footer page-customize__footer container">
+        <p class="text footer__text">
+          2020-2022
+          <span class="footer__span footer__span-blue">Terms of Service</span>
+          and <span class="footer__span footer__span-blue">Conditions</span>
+        </p>
+      </footer>
+    </div>
+    <script src="./js/toggleRadio.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/toggleTheme.js"></script>
+    <?php
+        include 'themes.php';
+    ?>
+  </body>
+</html>

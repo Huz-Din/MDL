@@ -1,0 +1,112 @@
+body {
+    color: #000000;
+}
+.wrapper {
+   background-color: #E5E5E5;
+}
+.container {
+   background-color: #F8F8F8;
+}
+.page-customize__text {
+   color: #585050;
+}
+.label {
+   color: #585050;
+}
+.input {   
+   &:hover {
+       background: #887C7C;
+       border: 1px solid #585050;
+       color: #0B0A0A;
+       &::placeholder {
+           color: #0B0A0A;
+       }
+   }
+   &:focus {
+       background: #DFDADA;
+       border: 1px solid #2A75DB;
+       color: #0B0A0A;
+       outline: #2A75DB;
+   }
+   background: #DFDADA;
+   border: 1px solid #887C7C;
+   color: #887C7C;
+}
+.form__fieldset-input--checkbox {
+   color: #0B0A0A;
+}
+.select {
+   &:hover {
+       background: #887C7C;
+       border: 1px solid #585050;
+       color: #0B0A0A;
+   }
+   background: #DFDADA;
+   border: 1px solid #887C7C;
+   color: #0B0A0A;
+}
+.select__title {
+   &::before,
+   &::after {
+     content: "";
+     background-color: #887C7C;
+   }
+   &:hover {
+     border-color: #887C7C;
+     &::before,
+     &::after {
+       background-color: #0B0A0A;
+     }
+   }
+}
+.reset {
+   border: solid 1px #c7ccd1;
+   background-color: #ffffff;
+   color: #333333;
+   &:hover {
+     background-color: #887C7C;
+     color: #ffffff;
+   }
+}
+
+.select__content {
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+}
+.select__input {
+   &:checked + label {
+     background-color: #dedede;
+   }
+}
+.select__label {
+   &:hover {
+     background-color: #DFDADA !important;
+   }
+}
+.form__fieldset-buttons--apply {  
+   background: #2A75DB;
+   color: #F8F8F8;
+}
+.form__fieldset-buttons--apply:hover {
+   background: #2A75DB;
+   color: #AAC9F1;
+}
+.form__fieldset-buttons--apply:focus {
+  background: #AAC9F1;
+  border: 1px solid #AAC9F1;
+  color: #F8F8F8;
+}
+.form__fieldset-buttons--cancel {
+   background-color: #F8F8F8;
+   color: #205EB0;
+}
+.footer__text {
+   color: #585050;
+}
+.footer__span-blue {
+   color: #205EB0;
+}
+
+
+
+

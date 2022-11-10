@@ -1,0 +1,131 @@
+body {
+    color: #DFDADA;
+}
+h3 {
+    color: #F3F3F3;
+}
+.wrapper {
+    background-color: #0C0D0D;
+}
+.container {
+background-color: #1E1D1D;
+}
+body {
+    color: #DFDADA;
+}
+.page-customize__text {
+    color: #DFDADA;
+}
+.label {
+    color: #DFDADA;
+}
+.input {   
+    &:hover {
+        background: #887C7C;
+        border: 1px solid #887C7C;
+        color: #F3F3F3;
+        &::placeholder {
+            color: #F3F3F3;
+        }
+    }
+    &:focus {
+        background: #585050;
+        border: 1px solid #B9D5FC;
+        color: #F3F3F3;
+        outline: #B9D5FC;
+    }
+    &::placeholder {
+        color: #887C7C;  
+    }
+    background: #585050;
+    border: 1px solid #887C7C;
+    color: #F3F3F3;     
+}
+.form__fieldset-input--checkbox {
+    color: #B9D5FC;
+}
+.select {
+    &:hover {
+        background: #585050;
+        border: 1px solid #887C7C;
+        color: #F3F3F3;
+        &::placeholder {
+            color: #F3F3F3;
+        }
+    }
+    background: #585050;
+    border: 1px solid #887C7C;
+    color: #887C7C;   
+}
+.select__title {
+    &::before,
+    &::after {
+      background-color: #887C7C;
+    }
+    &:hover {
+      border-color: #887C7C;
+      &::before,
+      &::after {
+        background-color: #B9D5FC;
+      }
+    }
+}
+.reset {
+    border: solid 1px #c7ccd1;
+    background-color: #ffffff;
+    color: #333333;
+    &:hover {
+      background-color: #887C7C;
+      color: #ffffff;
+    }
+}
+.select__content {
+    background-color: #424242;
+    border: 1px solid #424242;
+}
+.select__input {
+    &:checked + label {
+      background-color: #dedede;
+    }
+}
+.select__label {
+    &:hover {
+      background-color: #585050 !important;
+    }
+}
+.form__fieldset-buttons--apply {
+    &:hover {
+        background: #B9D5FC;
+        color: #1E1D1D;
+    }
+    &:focus {
+        background: #B9D5FC;
+        border: 1px solid #F0F6FF;
+        color: #1E1D1D;
+    }
+    background: #B9D5FC;
+    color: #1E1D1D;
+}
+.form__fieldset-buttons--cancel {
+    &:hover {
+        color: #AAC9F1;
+    }
+    &:focus {
+        border: 1px solid #B9D5FC;
+        outline: none;
+    }
+    background-color: #424242;
+    color: #AAC9F1;
+}
+.page-customize__footer {
+    background-image: url(../img/bgi_dark.png);
+}
+.footer__text {
+    color: #585050;
+}
+.footer__span-blue { 
+    color: #205EB0;
+}
+
+
+

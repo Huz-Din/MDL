@@ -1,0 +1,157 @@
+body {
+  color: #DFDADA;
+}
+
+h3 {
+  color: #F3F3F3;
+}
+
+.wrapper {
+  background-color: #0C0D0D;
+}
+
+.container {
+  background-color: #1E1D1D;
+}
+
+body {
+  color: #DFDADA;
+}
+
+.page-customize__text {
+  color: #DFDADA;
+}
+
+.label {
+  color: #DFDADA;
+}
+
+.input {
+  background: #585050;
+  border: 1px solid #887C7C;
+  color: #F3F3F3;
+}
+.input:hover {
+  background: #887C7C;
+  border: 1px solid #887C7C;
+  color: #F3F3F3;
+}
+.input:hover::-moz-placeholder {
+  color: #F3F3F3;
+}
+.input:hover:-ms-input-placeholder {
+  color: #F3F3F3;
+}
+.input:hover::placeholder {
+  color: #F3F3F3;
+}
+.input:focus {
+  background: #585050;
+  border: 1px solid #B9D5FC;
+  color: #F3F3F3;
+  outline: #B9D5FC;
+}
+.input::-moz-placeholder {
+  color: #887C7C;
+}
+.input:-ms-input-placeholder {
+  color: #887C7C;
+}
+.input::placeholder {
+  color: #887C7C;
+}
+
+.form__fieldset-input--checkbox {
+  color: #B9D5FC;
+}
+
+.select {
+  background: #585050;
+  border: 1px solid #887C7C;
+  color: #887C7C;
+}
+.select:hover {
+  background: #585050;
+  border: 1px solid #887C7C;
+  color: #F3F3F3;
+}
+.select:hover::-moz-placeholder {
+  color: #F3F3F3;
+}
+.select:hover:-ms-input-placeholder {
+  color: #F3F3F3;
+}
+.select:hover::placeholder {
+  color: #F3F3F3;
+}
+
+.select__title::before, .select__title::after {
+  background-color: #887C7C;
+}
+.select__title:hover {
+  border-color: #887C7C;
+}
+.select__title:hover::before, .select__title:hover::after {
+  background-color: #B9D5FC;
+}
+
+.reset {
+  border: solid 1px #c7ccd1;
+  background-color: #ffffff;
+  color: #333333;
+}
+.reset:hover {
+  background-color: #887C7C;
+  color: #ffffff;
+}
+
+.select__content {
+  background-color: #424242;
+  border: 1px solid #424242;
+}
+
+.select__input:checked + label {
+  background-color: #dedede;
+}
+
+.select__label:hover {
+  background-color: #585050 !important;
+}
+
+.form__fieldset-buttons--apply {
+  background: #B9D5FC;
+  color: #1E1D1D;
+}
+.form__fieldset-buttons--apply:hover {
+  background: #B9D5FC;
+  color: #1E1D1D;
+}
+.form__fieldset-buttons--apply:focus {
+  background: #B9D5FC;
+  border: 1px solid #F0F6FF;
+  color: #1E1D1D;
+}
+
+.form__fieldset-buttons--cancel {
+  background-color: #424242;
+  color: #AAC9F1;
+}
+.form__fieldset-buttons--cancel:hover {
+  color: #AAC9F1;
+}
+.form__fieldset-buttons--cancel:focus {
+  border: 1px solid #B9D5FC;
+  outline: none;
+}
+
+.page-customize__footer {
+  background-image: url(../img/bgi_dark.png);
+}
+
+.footer__text {
+  color: #585050;
+}
+
+.footer__span-blue {
+  color: #205EB0;
+}/*# sourceMappingURL=dark.css.map */
